@@ -1,5 +1,5 @@
 <?php
-function prettyPrint($json) {
+function beautifyJSON($json) {
   $result = '';
   $level = 0;
   $in_quotes = false;
