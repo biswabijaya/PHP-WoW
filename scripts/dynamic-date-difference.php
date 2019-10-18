@@ -1,17 +1,9 @@
 <?php
 
-/* Function Parameters
-  $date1 = strtotime("2019-01-01 00:00:00") or strtotime(date("Y-m-d H:i:s")) or time()
-  $date2 = strtotime("2019-12-31 23:59:59") or strtotime(date("Y-m-d H:i:s")) or time()
-  $format = 'Y' or 'M' or 'D' or 'H' or 'i' or 'S'
-*/
-
-/* Sample Usage
-  $date1 = strtotime("2019-01-01 00:00:00"); //from 2019 year beginning
-  $date2 = time(); //current time
-  $format = 'M'; // Printing in Month Days Hour Minute Second
-  echo dateDiff($date1,$date2,$format);
-*/
+// Parameters
+// $date1 = strtotime("2019-01-01 00:00:00") or strtotime(date("Y-m-d H:i:s")) or time()
+// $date2 = strtotime("2019-12-31 23:59:59") or strtotime(date("Y-m-d H:i:s")) or time()
+// $format = 'Y' or 'M' or 'D' or 'H' or 'i' or 'S'
 
 function dateDiff($date1,$date2,$format='D'){
   $diff = abs($date2 - $date1);
