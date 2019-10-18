@@ -1,4 +1,16 @@
 <?php
+
+/* Function Parameters
+  $json = stores the json format data in raw format;
+*/
+
+/* Sample Usage
+  $array = [["name","Biswa"],["website","biswabijaya.com"],["age","21"]];
+  $json=json_encode($array);
+  echo beautifyJSON($json);
+  //view-source to see result in a browser
+*/
+
 function beautifyJSON($json) {
   $result = '';
   $level = 0;
