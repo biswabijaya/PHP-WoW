@@ -1,6 +1,4 @@
 <?php
-
-
 /* Sample Usage
 $browser = new Browser();
 echo 'You have '.$browser->getBrowser().' version '.$browser->getVersion().' or greater';
