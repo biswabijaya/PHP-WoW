@@ -21,9 +21,9 @@ pushJSON($data,'login');
 */
 
 function pushJSON($data,$filepath) {
-  $oldData = json_decode(file_get_contents($filepath)); //array
-  $newData = array_push($old, $data); //array
-  $json = json_encode($newData, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES)); //json
+  $tmpData = json_decode(file_get_contents($filepath)); //array
+  array_push($tmpData, $data); //array
+  $json = json_encode($tmpData, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES)); //json
   file_put_contents($filepath, $json);
 }
 
