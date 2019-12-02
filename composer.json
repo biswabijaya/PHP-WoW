@@ -1,1 +1,5 @@
-
+{
+  "config": {
+    	"optimize-autoloader": true
+    }
+}
