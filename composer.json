@@ -1,5 +1,8 @@
 {
-  "config": {
+  "require": {
+    	"facebook/php-sdk": "3.2.*",
+    },
+    "config": {
     	"optimize-autoloader": true
     }
 }
