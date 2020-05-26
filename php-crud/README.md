@@ -12,12 +12,15 @@ This code is beneficial for those who want to do crud operations using php and M
 # 1. Insert Data API - only column clause
 
 Method 1 - GET
-``http://localhost:8080/?action=insert&tableName=qrcodes&column[]=userid&columnval[]=xX65av8IzSNsiEDV6S6KhSMVoUA2&column[]=redirecturl&columnval[]=http://instagram.com&column[]=qrstring&columnval[]=653gdfge``
+
+```
+http://localhost:8080/get.php?action=insert&tableName=qrcodes&column[]=userid&columnval[]=xX65av8IzSNsiEDV6S6KhSMVoUA2&column[]=redirecturl&columnval[]=http://instagram.com&column[]=qrstring&columnval[]=653gdfge
+```
 
 
 Method 2 - POST
 ```
-url - localhost:8080/
+url - http://localhost:8080/post.php
 action=insert
 tableName=qrcodes
 column[]=['userid','redirecturl','qrstring']
@@ -34,7 +37,7 @@ http://localhost:8080/get.php?action=update&tableName=qrcodes&column[]=userid&co
 
 Method 2 - Using URL non-string
 ```
-url - localhost:8080/post.php
+url - http://localhost:8080/post.php
 action=update
 tableName=qrcodes
 column[]=['redirecturl','qrstring']
@@ -52,7 +55,7 @@ http://localhost:8080/get.php?action=delete&tableName=qrcodes&where[]=userid&whe
 
 Method 2 - POST
 ```
-localhost:8080/post.php
+http://localhost:8080/post.php
 action=insert
 tableName=qrcodes
 where[]=['userid','qrstring']
@@ -62,12 +65,13 @@ whereval[]=['xX65av8IzSNsiEDV6S6KhSMVoUA2','9e6f3213']
 # 4. Fetch Data API - select (optional) and where clause (optional)
 
 Method 1 - GET
-```localhost:8080/get.php?action=get&tableName=qrcodes&select=redirecturl&where[]=userid&whereval[]=xX65av8IzSNsiEDV6S6KhSMVoUA2&where[]=qrstring&whereval[]=653gdfge
+```
+http://localhost:8080/get.php?action=get&tableName=qrcodes&select=redirecturl&where[]=userid&whereval[]=xX65av8IzSNsiEDV6S6KhSMVoUA2&where[]=qrstring&whereval[]=653gdfge
 ```
 
 Method 2 - POST
 ```
-url - localhost:8080/post.php
+url - http://localhost:8080/post.php
 action=get
 tableName=qrcodes
 select=redirecturl
@@ -80,12 +84,13 @@ whereval[]=['xX65av8IzSNsiEDV6S6KhSMVoUA2','9e6f3213']
 # 5. Fetch Data - distinct select
 
 Method 1 - GET
-```localhost:8080/get.php?action=get&tableName=qrcodes&select=redirecturl&distinct=true
+```
+http://localhost:8080/get.php?action=get&tableName=qrcodes&select=redirecturl&distinct=true
 ```
 
 Method 2 - POST
 ```
-url - localhost:8080/post.php
+url - http://localhost:8080/post.php
 action=get
 tableName=qrcodes
 select=redirecturl
@@ -95,12 +100,13 @@ distinct=true
 # 6. Fetch Data - fetch data count
 
 Method 1 - GET
-```localhost:8080/get.php?action=get&tableName=qrcodes&returntype=count
+```
+http://localhost:8080/get.php?action=get&tableName=qrcodes&returntype=count
 ```
 
 Method 2 - POST
 ```
-url - localhost:8080/post.php
+url - http://localhost:8080/post.php
 action=get
 tableName=qrcodes
 returntype=count
@@ -109,12 +115,13 @@ returntype=count
 # 7. Fetch Data - fetch data with by order and sort them
 
 Method 1 - GET
-```localhost:8080/get.php?action=get&tableName=qrcodes&orderby=id&sortby=DESC
+```
+http://localhost:8080/get.php?action=get&tableName=qrcodes&orderby=id&sortby=DESC
 ```
 
 Method 2 - POST
 ```
-url - localhost:8080/post.php
+url - http://localhost:8080/post.php
 action=get
 tableName=qrcodes
 orderby=id
@@ -124,12 +131,13 @@ sortby=DESC
 # 8. Fetch Data - fetch data and group them
 
 Method 1 - GET
-```localhost:8080/get.php?action=get&tableName=qrcodes&groupby=userid
+```
+http://localhost:8080/get.php?action=get&tableName=qrcodes&groupby=userid
 ```
 
 Method 2 - POST
 ```
-url - localhost:8080/post.php
+url - http://localhost:8080/post.php
 action=get
 tableName=qrcodes
 groupby=userid
@@ -138,12 +146,13 @@ groupby=userid
 # 9. Fetch Data - fetch limited data
 
 Method 1 - GET
-```localhost:8080/get.php?action=get&tableName=qrcodes&limit=5
+```
+http://localhost:8080/get.php?action=get&tableName=qrcodes&limit=5
 ```
 
 Method 2 - POST
 ```
-url - localhost:8080/post.php
+url - http://localhost:8080/post.php
 action=get
 tableName=qrcodes
 limit=5
