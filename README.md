@@ -8,6 +8,7 @@
 
 4. [PHP Perform Push on Array Data using JSON .](https://github.com/biswabijaya/PHP-WoW/blob/master/scripts/push-json.php "PHP Perform Push on Array Data using JSON")
 
+5. [PHP AllInOne QR Code Generator API.](https://github.com/biswabijaya/PHP-WoW/blob/master/scripts/qr-code.php "PHP AllInOne QR Code Generator API")
 
 ##### Advanced Ready to use PHP Web Plugins : Error Free
 
