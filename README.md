@@ -12,3 +12,5 @@
 ##### Advanced Ready to use PHP Web Plugins : Error Free
 
 1. [PHP Image Gallery Management .](https://github.com/biswabijaya/PHP-WoW/blob/master/image-gallery-management/ "PHP Image Gallery Management")
+
+2. [PHP Database CRUD API.](https://github.com/biswabijaya/PHP-WoW/blob/master/php-crud "PHP Database CRUD API")
