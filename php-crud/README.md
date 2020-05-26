@@ -1,15 +1,15 @@
-###Ver 1.0
+### Ver 1.0
 
-###LIMITATIONS
+### LIMITATIONS
 
 Tables should be pre-created in phpmyadmin
 We will add table create, alter functionality in version 2.0
 
-###Sample Implementation
+### Sample Implementation
 
 This code is beneficial for those who want to do crud operations using php and MySQLi with 0 knowledge of php.
 
-#1. Insert Data API - only column clause
+# 1. Insert Data API - only column clause
 
 Method 1 - GET
 ``` http://localhost:8080/?action=insert&tableName=qrcodes&column[]=userid&columnval[]=xX65av8IzSNsiEDV6S6KhSMVoUA2&column[]=redirecturl&columnval[]=http://instagram.com&column[]=qrstring&columnval[]=653gdfge
@@ -25,7 +25,7 @@ columnval[]=['xX65av8IzSNsiEDV6S6KhSMVoUA2','http://instagram.com','9e6f3213']
 ```
 
 
-#2. Update Data API- column and where clause
+# 2. Update Data API- column and where clause
 
 Method 1 - GET
 ```
@@ -43,7 +43,7 @@ where[]=['userid','qrstring']
 whereval[]=['xX65av8IzSNsiEDV6S6KhSMVoUA2','9e6f3213']
 ```
 
-#3. Delete Data API - only where clause
+# 3. Delete Data API - only where clause
 
 Method 1 - GET
 ```
@@ -59,7 +59,7 @@ where[]=['userid','qrstring']
 whereval[]=['xX65av8IzSNsiEDV6S6KhSMVoUA2','9e6f3213']
 ```
 
-#4. Fetch Data API - select (optional) and where clause (optional)
+# 4. Fetch Data API - select (optional) and where clause (optional)
 
 Method 1 - GET
 ```localhost:8080/get.php?action=get&tableName=qrcodes&select=redirecturl&where[]=userid&whereval[]=xX65av8IzSNsiEDV6S6KhSMVoUA2&where[]=qrstring&whereval[]=653gdfge
@@ -75,9 +75,9 @@ where[]=['userid','qrstring']
 whereval[]=['xX65av8IzSNsiEDV6S6KhSMVoUA2','9e6f3213']
 ```
 
-##Other Advanced Fetch API Implementations
+## Other Advanced Fetch API Implementations
 
-#5. Fetch Data - distinct select
+# 5. Fetch Data - distinct select
 
 Method 1 - GET
 ```localhost:8080/get.php?action=get&tableName=qrcodes&select=redirecturl&distinct=true
@@ -92,7 +92,7 @@ select=redirecturl
 distinct=true
 ```
 
-#6. Fetch Data - fetch data count
+# 6. Fetch Data - fetch data count
 
 Method 1 - GET
 ```localhost:8080/get.php?action=get&tableName=qrcodes&returntype=count
@@ -106,7 +106,7 @@ tableName=qrcodes
 returntype=count
 ```
 
-#7. Fetch Data - fetch data with by order and sort them
+# 7. Fetch Data - fetch data with by order and sort them
 
 Method 1 - GET
 ```localhost:8080/get.php?action=get&tableName=qrcodes&orderby=id&sortby=DESC
@@ -121,7 +121,7 @@ orderby=id
 sortby=DESC
 ```
 
-#8. Fetch Data - fetch data and group them
+# 8. Fetch Data - fetch data and group them
 
 Method 1 - GET
 ```localhost:8080/get.php?action=get&tableName=qrcodes&groupby=userid
@@ -135,7 +135,7 @@ tableName=qrcodes
 groupby=userid
 ```
 
-#9. Fetch Data - fetch limited data
+# 9. Fetch Data - fetch limited data
 
 Method 1 - GET
 ```localhost:8080/get.php?action=get&tableName=qrcodes&limit=5
