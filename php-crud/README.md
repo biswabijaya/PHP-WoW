@@ -12,8 +12,8 @@ This code is beneficial for those who want to do crud operations using php and M
 # 1. Insert Data API - only column clause
 
 Method 1 - GET
-``` http://localhost:8080/?action=insert&tableName=qrcodes&column[]=userid&columnval[]=xX65av8IzSNsiEDV6S6KhSMVoUA2&column[]=redirecturl&columnval[]=http://instagram.com&column[]=qrstring&columnval[]=653gdfge
-```
+``http://localhost:8080/?action=insert&tableName=qrcodes&column[]=userid&columnval[]=xX65av8IzSNsiEDV6S6KhSMVoUA2&column[]=redirecturl&columnval[]=http://instagram.com&column[]=qrstring&columnval[]=653gdfge``
+
 
 Method 2 - POST
 ```
